@@ -1,0 +1,152 @@
+// Utils
+// Utils
+
+// Utils margin-and padding
+
+$spacer-sizes: (
+     auto: auto,
+     0: 0,
+     1: $spacer-1,
+     2: $spacer-2,
+     3: $spacer-3,
+     4: $spacer-4,
+     5: $spacer-5,
+     6: $spacer-6,
+     7: $spacer-7,
+     8: $spacer-8,
+     9: $spacer-9,
+     10: $spacer-10,
+);
+
+@each $spacer-size, $spacer-value in $spacer-sizes {
+     .m-#{$spacer-size} {
+          margin: $spacer-value !important;
+     }
+     .mt-#{$spacer-size} {
+          margin-top: $spacer-value !important;
+     }
+     .me-#{$spacer-size} {
+          margin-right: $spacer-value !important;
+     }
+     .mb-#{$spacer-size} {
+          margin-bottom: $spacer-value !important;
+     }
+     .ms-#{$spacer-size} {
+          margin-left: $spacer-value !important;
+     }
+     .mx-#{$spacer-size} {
+          margin-inline: $spacer-value !important;
+     }
+     .my-#{$spacer-size} {
+          margin-block: $spacer-value !important;
+     }
+     .p-#{$spacer-size} {
+          padding: $spacer-value !important;
+     }
+     .pt-#{$spacer-size} {
+          padding-top: $spacer-value !important;
+     }
+     .pe-#{$spacer-size} {
+          padding-right: $spacer-value !important;
+     }
+     .pb-#{$spacer-size} {
+          padding-bottom: $spacer-value !important;
+     }
+     .ps-#{$spacer-size} {
+          padding-left: $spacer-value !important;
+     }
+     .px-#{$spacer-size} {
+          padding-inline: $spacer-value !important;
+     }
+     .py-#{$spacer-size} {
+          padding-block: $spacer-value !important;
+     }
+}
+// Gap
+@each $spacer-size, $spacer-value in $spacer-sizes {
+     .gap-#{$spacer-size} {
+          gap: $spacer-value !important;
+     }
+}
+// Container
+.container {
+     width: 100%;
+     max-width: var(--container);
+     margin-inline: auto;
+     padding-inline: 30px;
+     @include mobile {
+          padding-inline: 20px;
+     }
+}
+// Scrollbar
+.scrollbar {
+     @include scrollbar;
+}
+// Position
+.relative {
+     position: relative;
+}
+.absolute {
+     position: absolute;
+}
+.d {
+     &-none {
+          display: none !important;
+     }
+     &-flex {
+          display: flex !important;
+     }
+     &-block {
+          display: block !important;
+     }
+}
+// Font weight
+
+$fw-start: 100;
+$fw-end: 800;
+$fw-step: 100;
+
+// Цикл для создания стилей
+@for $i from $fw-start through $fw-end {
+     .fw-#{$i} {
+          font-weight: $i !important;
+     }
+}
+// Width
+.w {
+     &-100 {
+          width: 100% !important;
+     }
+}
+// background
+.bg {
+     &-white {
+          background-color: var(--color-white) !important;
+     }
+}
+// Fonts size
+.fs {
+     &-14 {
+          font-size: 14px;
+     }
+}
+.flex-column {
+     display: flex;
+     flex-direction: column;
+}
+// Flex align
+.align-items {
+     &-center {
+          align-items: center;
+     }
+}
+.visibility {
+     visibility: visible;
+     &-hidden {
+          visibility: hidden;
+     }
+}
+// Shadow
+.shadow-none {
+     box-shadow: none !important;
+}

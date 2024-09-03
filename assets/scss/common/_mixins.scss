@@ -1,0 +1,135 @@
+// Mixins
+
+// Repositive text
+@mixin fluid-text($max: 48, $min: 16) {
+     font-size: clamp(#{$min}px, #{$max / 1450 * 100}vw, #{$max}px);
+}
+// Text overflow
+@mixin text-overflow($line-clamp: 2) {
+     overflow: hidden;
+     text-overflow: ellipsis;
+     display: -webkit-box;
+     -webkit-line-clamp: $line-clamp;
+     line-clamp: $line-clamp;
+     -webkit-box-orient: vertical;
+}
+
+// Flex center
+@mixin flex-center($isInline: false) {
+     @if $isInline {
+          display: inline-flex;
+     } @else {
+          display: flex;
+     }
+     justify-content: center;
+     align-items: center;
+}
+
+// Grid layout
+@mixin grid($grid-columns, $grid-gap) {
+     display: grid;
+     grid-template-columns: $grid-columns;
+     grid-gap: $grid-gap;
+}
+
+// Flex layout
+@mixin flex($flex-align: center, $flex-justify: start, $flex-gap) {
+     display: flex;
+     align-items: $flex-align;
+     justify-content: $flex-justify;
+     gap: $flex-gap;
+}
+// Flex center
+@mixin flex-center {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+@mixin flex-column($flex-row-gap) {
+     display: flex;
+     flex-direction: column;
+     gap: $flex-row-gap;
+}
+// Card
+@mixin card($card-color: var(--color-white), $card-padding: 15px, $card-border-radius: 15px) {
+     background-color: $card-color;
+     padding: $card-padding;
+     border-radius: $card-border-radius;
+     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.01);
+}
+
+// Circle image
+@mixin circle-image($circle-image) {
+     width: $circle-image;
+     height: $circle-image;
+     border-radius: 50%;
+     object-fit: cover;
+}
+// Cover
+@mixin cover {
+     img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: var(--transition);
+     }
+}
+// Cover
+@mixin circle-block($circle-block) {
+     width: $circle-block;
+     height: $circle-block;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+// Sticky top
+@mixin sticky-block($sticky-top: 0) {
+     position: sticky;
+     top: $sticky-top;
+     z-index: $z-index-1;
+}
+
+// Button
+@mixin button($btn-font-size: 15px, $btn-font-weight: 700, $btn-gap: 10px, $btn-line-height: 1, $btn-height: $default-size, $btn-border-radius: 13px, $btn-padding: 20px) {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     gap: $btn-gap;
+     outline: none;
+     border: 1px solid transparent;
+     height: $btn-height;
+     padding-inline: $btn-padding;
+     border-radius: $btn-border-radius;
+     font-size: $btn-font-size;
+     font-weight: $btn-font-weight;
+     line-height: $btn-line-height;
+     transition: var(--transition);
+     transform: scale(1);
+     cursor: pointer;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     user-select: none;
+     font-family: var(--font-button);
+}
+// Button color
+@mixin button-color($btn-color, $btn-background, $btn-shadow, $btn-border-color) {
+     color: $btn-color;
+     background: $btn-background;
+     box-shadow: $btn-shadow;
+     border-color: $btn-border-color;
+}
+// Scrollbar
+@mixin scrollbar {
+     &::-webkit-scrollbar {
+          width: 10px;
+     }
+     &::-webkit-scrollbar-track {
+          background: transparent;
+     }
+     &::-webkit-scrollbar-thumb {
+          background-color: #cacaca;
+          border-radius: 20px;
+          border: 2px solid var(--color-body);
+     }
+}

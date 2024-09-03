@@ -1,0 +1,11 @@
+<?php
+
+$lang = array (
+
+'key'  	    =>  "es",
+'title'  	    =>  "Bienes Raíces",
+
+'welcome'  	    =>  "Hola mundo",
+
+);
+?>

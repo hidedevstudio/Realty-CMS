@@ -1,0 +1,14 @@
+<?php
+
+$lang = array (
+
+'key'  	    =>  "en",
+'title'  	    =>  "Realty CMS",
+'description'  	    =>  "Realty CMS",
+'keywords'  	    =>  "Realty CMS",
+
+
+'welcome'  	    =>  "Hello world",
+
+);
+?>

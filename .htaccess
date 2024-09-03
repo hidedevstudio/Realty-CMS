@@ -1,0 +1,8 @@
+# Включаем переопределение URL
+RewriteEngine On
+
+# Перенаправляем запросы вида /en или /ru на index.php с соответствующим параметром lang
+RewriteRule ^(en|ru|es|fr)/?$ index.php?lang=$1 [L,QSA]
+
+# Перенаправляем запросы вида /en/anything или /ru/anything на index.php с параметром lang и сохранением остального URL
+RewriteRule ^(en|ru|es|fr)/(.*)$ index.php?lang=$1&$2 [L,QSA]

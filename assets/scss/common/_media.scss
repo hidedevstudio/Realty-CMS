@@ -1,0 +1,57 @@
+// Media
+$desctop: 1280px;
+$desctop-above: 1281px;
+
+$tablet: 1023px;
+$tablet-above: 1024px;
+
+$mobile: 768px;
+$mobile-above: 769px;
+
+// Desctop adaptive
+@mixin desctop {
+     @media (max-width: $desctop) {
+          @content;
+     }
+}
+@mixin desctop-above {
+     @media (min-width: $desctop-above) {
+          @content;
+     }
+}
+
+// Tablet adaptive
+@mixin tablet {
+     @media (max-width: $tablet) {
+          @content;
+     }
+}
+@mixin tablet-above {
+     @media (min-width: $tablet-above) {
+          @content;
+     }
+}
+
+// Mobile adaptive
+@mixin mobile {
+     @media (max-width: $mobile) {
+          @content;
+     }
+}
+@mixin mobile-above {
+     @media (min-width: $mobile-above) {
+          @content;
+     }
+}
+
+// Custom adaptive
+@mixin adaptive($adaptive) {
+     @media (max-width: $adaptive) {
+          @content;
+     }
+}
+@mixin adaptive-above($adaptive-above) {
+     @media (min-width: $adaptive-above) {
+          @content;
+     }
+}

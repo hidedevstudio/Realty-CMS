@@ -1,0 +1,3709 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+:where(ul, ol):where([class]) {
+  padding-left: 0;
+}
+
+:where(blockquote, figure):where([class]) {
+  margin: 0;
+}
+
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
+  margin-block: 0;
+}
+
+:where(dd[class]) {
+  margin-left: 0;
+}
+
+:where(fieldset[class]) {
+  margin-left: 0;
+  padding: 0;
+  border: none;
+}
+
+:where(ul[class]) {
+  list-style: none;
+}
+
+p {
+  --paragraphMarginBottom: 24px;
+  margin-block: 0;
+}
+p:where(:not([class]):not(:last-child)) {
+  margin-bottom: var(--paragraphMarginBottom);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  transition: 0.2s;
+}
+a, a:hover {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-block: 0;
+}
+
+svg *[fill] {
+  fill: currentColor;
+}
+
+svg *[stroke] {
+  stroke: currentColor;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-primary: #6c83a4;
+  --color-secondary: #dad0c2;
+  --color-white: #fff;
+  --color-dark: #1f1e1d;
+  --color-body: #ecf0f1;
+  --color-text: #394148;
+  --border-radius: 15px;
+  --transition: 0.2s;
+  --font-primary: "Nunito", system-ui;
+}
+
+.m-auto {
+  margin: auto !important;
+}
+
+.mt-auto {
+  margin-top: auto !important;
+}
+
+.me-auto {
+  margin-right: auto !important;
+}
+
+.mb-auto {
+  margin-bottom: auto !important;
+}
+
+.ms-auto {
+  margin-left: auto !important;
+}
+
+.mx-auto {
+  margin-inline: auto !important;
+}
+
+.my-auto {
+  margin-block: auto !important;
+}
+
+.p-auto {
+  padding: auto !important;
+}
+
+.pt-auto {
+  padding-top: auto !important;
+}
+
+.pe-auto {
+  padding-right: auto !important;
+}
+
+.pb-auto {
+  padding-bottom: auto !important;
+}
+
+.ps-auto {
+  padding-left: auto !important;
+}
+
+.px-auto {
+  padding-inline: auto !important;
+}
+
+.py-auto {
+  padding-block: auto !important;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.me-0 {
+  margin-right: 0 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.ms-0 {
+  margin-left: 0 !important;
+}
+
+.mx-0 {
+  margin-inline: 0 !important;
+}
+
+.my-0 {
+  margin-block: 0 !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pe-0 {
+  padding-right: 0 !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.ps-0 {
+  padding-left: 0 !important;
+}
+
+.px-0 {
+  padding-inline: 0 !important;
+}
+
+.py-0 {
+  padding-block: 0 !important;
+}
+
+.m-1 {
+  margin: 0.25rem !important;
+}
+
+.mt-1 {
+  margin-top: 0.25rem !important;
+}
+
+.me-1 {
+  margin-right: 0.25rem !important;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem !important;
+}
+
+.ms-1 {
+  margin-left: 0.25rem !important;
+}
+
+.mx-1 {
+  margin-inline: 0.25rem !important;
+}
+
+.my-1 {
+  margin-block: 0.25rem !important;
+}
+
+.p-1 {
+  padding: 0.25rem !important;
+}
+
+.pt-1 {
+  padding-top: 0.25rem !important;
+}
+
+.pe-1 {
+  padding-right: 0.25rem !important;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem !important;
+}
+
+.ps-1 {
+  padding-left: 0.25rem !important;
+}
+
+.px-1 {
+  padding-inline: 0.25rem !important;
+}
+
+.py-1 {
+  padding-block: 0.25rem !important;
+}
+
+.m-2 {
+  margin: 0.5rem !important;
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.me-2 {
+  margin-right: 0.5rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+.ms-2 {
+  margin-left: 0.5rem !important;
+}
+
+.mx-2 {
+  margin-inline: 0.5rem !important;
+}
+
+.my-2 {
+  margin-block: 0.5rem !important;
+}
+
+.p-2 {
+  padding: 0.5rem !important;
+}
+
+.pt-2 {
+  padding-top: 0.5rem !important;
+}
+
+.pe-2 {
+  padding-right: 0.5rem !important;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem !important;
+}
+
+.ps-2 {
+  padding-left: 0.5rem !important;
+}
+
+.px-2 {
+  padding-inline: 0.5rem !important;
+}
+
+.py-2 {
+  padding-block: 0.5rem !important;
+}
+
+.m-3 {
+  margin: 1rem !important;
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+.me-3 {
+  margin-right: 1rem !important;
+}
+
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+.ms-3 {
+  margin-left: 1rem !important;
+}
+
+.mx-3 {
+  margin-inline: 1rem !important;
+}
+
+.my-3 {
+  margin-block: 1rem !important;
+}
+
+.p-3 {
+  padding: 1rem !important;
+}
+
+.pt-3 {
+  padding-top: 1rem !important;
+}
+
+.pe-3 {
+  padding-right: 1rem !important;
+}
+
+.pb-3 {
+  padding-bottom: 1rem !important;
+}
+
+.ps-3 {
+  padding-left: 1rem !important;
+}
+
+.px-3 {
+  padding-inline: 1rem !important;
+}
+
+.py-3 {
+  padding-block: 1rem !important;
+}
+
+.m-4 {
+  margin: 2rem !important;
+}
+
+.mt-4 {
+  margin-top: 2rem !important;
+}
+
+.me-4 {
+  margin-right: 2rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 2rem !important;
+}
+
+.ms-4 {
+  margin-left: 2rem !important;
+}
+
+.mx-4 {
+  margin-inline: 2rem !important;
+}
+
+.my-4 {
+  margin-block: 2rem !important;
+}
+
+.p-4 {
+  padding: 2rem !important;
+}
+
+.pt-4 {
+  padding-top: 2rem !important;
+}
+
+.pe-4 {
+  padding-right: 2rem !important;
+}
+
+.pb-4 {
+  padding-bottom: 2rem !important;
+}
+
+.ps-4 {
+  padding-left: 2rem !important;
+}
+
+.px-4 {
+  padding-inline: 2rem !important;
+}
+
+.py-4 {
+  padding-block: 2rem !important;
+}
+
+.m-5 {
+  margin: 3rem !important;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.me-5 {
+  margin-right: 3rem !important;
+}
+
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
+.ms-5 {
+  margin-left: 3rem !important;
+}
+
+.mx-5 {
+  margin-inline: 3rem !important;
+}
+
+.my-5 {
+  margin-block: 3rem !important;
+}
+
+.p-5 {
+  padding: 3rem !important;
+}
+
+.pt-5 {
+  padding-top: 3rem !important;
+}
+
+.pe-5 {
+  padding-right: 3rem !important;
+}
+
+.pb-5 {
+  padding-bottom: 3rem !important;
+}
+
+.ps-5 {
+  padding-left: 3rem !important;
+}
+
+.px-5 {
+  padding-inline: 3rem !important;
+}
+
+.py-5 {
+  padding-block: 3rem !important;
+}
+
+.m-6 {
+  margin: 25px !important;
+}
+
+.mt-6 {
+  margin-top: 25px !important;
+}
+
+.me-6 {
+  margin-right: 25px !important;
+}
+
+.mb-6 {
+  margin-bottom: 25px !important;
+}
+
+.ms-6 {
+  margin-left: 25px !important;
+}
+
+.mx-6 {
+  margin-inline: 25px !important;
+}
+
+.my-6 {
+  margin-block: 25px !important;
+}
+
+.p-6 {
+  padding: 25px !important;
+}
+
+.pt-6 {
+  padding-top: 25px !important;
+}
+
+.pe-6 {
+  padding-right: 25px !important;
+}
+
+.pb-6 {
+  padding-bottom: 25px !important;
+}
+
+.ps-6 {
+  padding-left: 25px !important;
+}
+
+.px-6 {
+  padding-inline: 25px !important;
+}
+
+.py-6 {
+  padding-block: 25px !important;
+}
+
+.m-7 {
+  margin: 50px !important;
+}
+
+.mt-7 {
+  margin-top: 50px !important;
+}
+
+.me-7 {
+  margin-right: 50px !important;
+}
+
+.mb-7 {
+  margin-bottom: 50px !important;
+}
+
+.ms-7 {
+  margin-left: 50px !important;
+}
+
+.mx-7 {
+  margin-inline: 50px !important;
+}
+
+.my-7 {
+  margin-block: 50px !important;
+}
+
+.p-7 {
+  padding: 50px !important;
+}
+
+.pt-7 {
+  padding-top: 50px !important;
+}
+
+.pe-7 {
+  padding-right: 50px !important;
+}
+
+.pb-7 {
+  padding-bottom: 50px !important;
+}
+
+.ps-7 {
+  padding-left: 50px !important;
+}
+
+.px-7 {
+  padding-inline: 50px !important;
+}
+
+.py-7 {
+  padding-block: 50px !important;
+}
+
+.m-8 {
+  margin: 100px !important;
+}
+
+.mt-8 {
+  margin-top: 100px !important;
+}
+
+.me-8 {
+  margin-right: 100px !important;
+}
+
+.mb-8 {
+  margin-bottom: 100px !important;
+}
+
+.ms-8 {
+  margin-left: 100px !important;
+}
+
+.mx-8 {
+  margin-inline: 100px !important;
+}
+
+.my-8 {
+  margin-block: 100px !important;
+}
+
+.p-8 {
+  padding: 100px !important;
+}
+
+.pt-8 {
+  padding-top: 100px !important;
+}
+
+.pe-8 {
+  padding-right: 100px !important;
+}
+
+.pb-8 {
+  padding-bottom: 100px !important;
+}
+
+.ps-8 {
+  padding-left: 100px !important;
+}
+
+.px-8 {
+  padding-inline: 100px !important;
+}
+
+.py-8 {
+  padding-block: 100px !important;
+}
+
+.m-9 {
+  margin: 150px !important;
+}
+
+.mt-9 {
+  margin-top: 150px !important;
+}
+
+.me-9 {
+  margin-right: 150px !important;
+}
+
+.mb-9 {
+  margin-bottom: 150px !important;
+}
+
+.ms-9 {
+  margin-left: 150px !important;
+}
+
+.mx-9 {
+  margin-inline: 150px !important;
+}
+
+.my-9 {
+  margin-block: 150px !important;
+}
+
+.p-9 {
+  padding: 150px !important;
+}
+
+.pt-9 {
+  padding-top: 150px !important;
+}
+
+.pe-9 {
+  padding-right: 150px !important;
+}
+
+.pb-9 {
+  padding-bottom: 150px !important;
+}
+
+.ps-9 {
+  padding-left: 150px !important;
+}
+
+.px-9 {
+  padding-inline: 150px !important;
+}
+
+.py-9 {
+  padding-block: 150px !important;
+}
+
+.m-10 {
+  margin: 200px !important;
+}
+
+.mt-10 {
+  margin-top: 200px !important;
+}
+
+.me-10 {
+  margin-right: 200px !important;
+}
+
+.mb-10 {
+  margin-bottom: 200px !important;
+}
+
+.ms-10 {
+  margin-left: 200px !important;
+}
+
+.mx-10 {
+  margin-inline: 200px !important;
+}
+
+.my-10 {
+  margin-block: 200px !important;
+}
+
+.p-10 {
+  padding: 200px !important;
+}
+
+.pt-10 {
+  padding-top: 200px !important;
+}
+
+.pe-10 {
+  padding-right: 200px !important;
+}
+
+.pb-10 {
+  padding-bottom: 200px !important;
+}
+
+.ps-10 {
+  padding-left: 200px !important;
+}
+
+.px-10 {
+  padding-inline: 200px !important;
+}
+
+.py-10 {
+  padding-block: 200px !important;
+}
+
+.gap-auto {
+  gap: auto !important;
+}
+
+.gap-0 {
+  gap: 0 !important;
+}
+
+.gap-1 {
+  gap: 0.25rem !important;
+}
+
+.gap-2 {
+  gap: 0.5rem !important;
+}
+
+.gap-3 {
+  gap: 1rem !important;
+}
+
+.gap-4 {
+  gap: 2rem !important;
+}
+
+.gap-5 {
+  gap: 3rem !important;
+}
+
+.gap-6 {
+  gap: 25px !important;
+}
+
+.gap-7 {
+  gap: 50px !important;
+}
+
+.gap-8 {
+  gap: 100px !important;
+}
+
+.gap-9 {
+  gap: 150px !important;
+}
+
+.gap-10 {
+  gap: 200px !important;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: 30px;
+}
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 20px;
+  }
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+.scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #cacaca;
+  border-radius: 20px;
+  border: 2px solid var(--color-body);
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.d-none {
+  display: none !important;
+}
+.d-flex {
+  display: flex !important;
+}
+.d-block {
+  display: block !important;
+}
+
+.fw-100 {
+  font-weight: 100 !important;
+}
+
+.fw-101 {
+  font-weight: 101 !important;
+}
+
+.fw-102 {
+  font-weight: 102 !important;
+}
+
+.fw-103 {
+  font-weight: 103 !important;
+}
+
+.fw-104 {
+  font-weight: 104 !important;
+}
+
+.fw-105 {
+  font-weight: 105 !important;
+}
+
+.fw-106 {
+  font-weight: 106 !important;
+}
+
+.fw-107 {
+  font-weight: 107 !important;
+}
+
+.fw-108 {
+  font-weight: 108 !important;
+}
+
+.fw-109 {
+  font-weight: 109 !important;
+}
+
+.fw-110 {
+  font-weight: 110 !important;
+}
+
+.fw-111 {
+  font-weight: 111 !important;
+}
+
+.fw-112 {
+  font-weight: 112 !important;
+}
+
+.fw-113 {
+  font-weight: 113 !important;
+}
+
+.fw-114 {
+  font-weight: 114 !important;
+}
+
+.fw-115 {
+  font-weight: 115 !important;
+}
+
+.fw-116 {
+  font-weight: 116 !important;
+}
+
+.fw-117 {
+  font-weight: 117 !important;
+}
+
+.fw-118 {
+  font-weight: 118 !important;
+}
+
+.fw-119 {
+  font-weight: 119 !important;
+}
+
+.fw-120 {
+  font-weight: 120 !important;
+}
+
+.fw-121 {
+  font-weight: 121 !important;
+}
+
+.fw-122 {
+  font-weight: 122 !important;
+}
+
+.fw-123 {
+  font-weight: 123 !important;
+}
+
+.fw-124 {
+  font-weight: 124 !important;
+}
+
+.fw-125 {
+  font-weight: 125 !important;
+}
+
+.fw-126 {
+  font-weight: 126 !important;
+}
+
+.fw-127 {
+  font-weight: 127 !important;
+}
+
+.fw-128 {
+  font-weight: 128 !important;
+}
+
+.fw-129 {
+  font-weight: 129 !important;
+}
+
+.fw-130 {
+  font-weight: 130 !important;
+}
+
+.fw-131 {
+  font-weight: 131 !important;
+}
+
+.fw-132 {
+  font-weight: 132 !important;
+}
+
+.fw-133 {
+  font-weight: 133 !important;
+}
+
+.fw-134 {
+  font-weight: 134 !important;
+}
+
+.fw-135 {
+  font-weight: 135 !important;
+}
+
+.fw-136 {
+  font-weight: 136 !important;
+}
+
+.fw-137 {
+  font-weight: 137 !important;
+}
+
+.fw-138 {
+  font-weight: 138 !important;
+}
+
+.fw-139 {
+  font-weight: 139 !important;
+}
+
+.fw-140 {
+  font-weight: 140 !important;
+}
+
+.fw-141 {
+  font-weight: 141 !important;
+}
+
+.fw-142 {
+  font-weight: 142 !important;
+}
+
+.fw-143 {
+  font-weight: 143 !important;
+}
+
+.fw-144 {
+  font-weight: 144 !important;
+}
+
+.fw-145 {
+  font-weight: 145 !important;
+}
+
+.fw-146 {
+  font-weight: 146 !important;
+}
+
+.fw-147 {
+  font-weight: 147 !important;
+}
+
+.fw-148 {
+  font-weight: 148 !important;
+}
+
+.fw-149 {
+  font-weight: 149 !important;
+}
+
+.fw-150 {
+  font-weight: 150 !important;
+}
+
+.fw-151 {
+  font-weight: 151 !important;
+}
+
+.fw-152 {
+  font-weight: 152 !important;
+}
+
+.fw-153 {
+  font-weight: 153 !important;
+}
+
+.fw-154 {
+  font-weight: 154 !important;
+}
+
+.fw-155 {
+  font-weight: 155 !important;
+}
+
+.fw-156 {
+  font-weight: 156 !important;
+}
+
+.fw-157 {
+  font-weight: 157 !important;
+}
+
+.fw-158 {
+  font-weight: 158 !important;
+}
+
+.fw-159 {
+  font-weight: 159 !important;
+}
+
+.fw-160 {
+  font-weight: 160 !important;
+}
+
+.fw-161 {
+  font-weight: 161 !important;
+}
+
+.fw-162 {
+  font-weight: 162 !important;
+}
+
+.fw-163 {
+  font-weight: 163 !important;
+}
+
+.fw-164 {
+  font-weight: 164 !important;
+}
+
+.fw-165 {
+  font-weight: 165 !important;
+}
+
+.fw-166 {
+  font-weight: 166 !important;
+}
+
+.fw-167 {
+  font-weight: 167 !important;
+}
+
+.fw-168 {
+  font-weight: 168 !important;
+}
+
+.fw-169 {
+  font-weight: 169 !important;
+}
+
+.fw-170 {
+  font-weight: 170 !important;
+}
+
+.fw-171 {
+  font-weight: 171 !important;
+}
+
+.fw-172 {
+  font-weight: 172 !important;
+}
+
+.fw-173 {
+  font-weight: 173 !important;
+}
+
+.fw-174 {
+  font-weight: 174 !important;
+}
+
+.fw-175 {
+  font-weight: 175 !important;
+}
+
+.fw-176 {
+  font-weight: 176 !important;
+}
+
+.fw-177 {
+  font-weight: 177 !important;
+}
+
+.fw-178 {
+  font-weight: 178 !important;
+}
+
+.fw-179 {
+  font-weight: 179 !important;
+}
+
+.fw-180 {
+  font-weight: 180 !important;
+}
+
+.fw-181 {
+  font-weight: 181 !important;
+}
+
+.fw-182 {
+  font-weight: 182 !important;
+}
+
+.fw-183 {
+  font-weight: 183 !important;
+}
+
+.fw-184 {
+  font-weight: 184 !important;
+}
+
+.fw-185 {
+  font-weight: 185 !important;
+}
+
+.fw-186 {
+  font-weight: 186 !important;
+}
+
+.fw-187 {
+  font-weight: 187 !important;
+}
+
+.fw-188 {
+  font-weight: 188 !important;
+}
+
+.fw-189 {
+  font-weight: 189 !important;
+}
+
+.fw-190 {
+  font-weight: 190 !important;
+}
+
+.fw-191 {
+  font-weight: 191 !important;
+}
+
+.fw-192 {
+  font-weight: 192 !important;
+}
+
+.fw-193 {
+  font-weight: 193 !important;
+}
+
+.fw-194 {
+  font-weight: 194 !important;
+}
+
+.fw-195 {
+  font-weight: 195 !important;
+}
+
+.fw-196 {
+  font-weight: 196 !important;
+}
+
+.fw-197 {
+  font-weight: 197 !important;
+}
+
+.fw-198 {
+  font-weight: 198 !important;
+}
+
+.fw-199 {
+  font-weight: 199 !important;
+}
+
+.fw-200 {
+  font-weight: 200 !important;
+}
+
+.fw-201 {
+  font-weight: 201 !important;
+}
+
+.fw-202 {
+  font-weight: 202 !important;
+}
+
+.fw-203 {
+  font-weight: 203 !important;
+}
+
+.fw-204 {
+  font-weight: 204 !important;
+}
+
+.fw-205 {
+  font-weight: 205 !important;
+}
+
+.fw-206 {
+  font-weight: 206 !important;
+}
+
+.fw-207 {
+  font-weight: 207 !important;
+}
+
+.fw-208 {
+  font-weight: 208 !important;
+}
+
+.fw-209 {
+  font-weight: 209 !important;
+}
+
+.fw-210 {
+  font-weight: 210 !important;
+}
+
+.fw-211 {
+  font-weight: 211 !important;
+}
+
+.fw-212 {
+  font-weight: 212 !important;
+}
+
+.fw-213 {
+  font-weight: 213 !important;
+}
+
+.fw-214 {
+  font-weight: 214 !important;
+}
+
+.fw-215 {
+  font-weight: 215 !important;
+}
+
+.fw-216 {
+  font-weight: 216 !important;
+}
+
+.fw-217 {
+  font-weight: 217 !important;
+}
+
+.fw-218 {
+  font-weight: 218 !important;
+}
+
+.fw-219 {
+  font-weight: 219 !important;
+}
+
+.fw-220 {
+  font-weight: 220 !important;
+}
+
+.fw-221 {
+  font-weight: 221 !important;
+}
+
+.fw-222 {
+  font-weight: 222 !important;
+}
+
+.fw-223 {
+  font-weight: 223 !important;
+}
+
+.fw-224 {
+  font-weight: 224 !important;
+}
+
+.fw-225 {
+  font-weight: 225 !important;
+}
+
+.fw-226 {
+  font-weight: 226 !important;
+}
+
+.fw-227 {
+  font-weight: 227 !important;
+}
+
+.fw-228 {
+  font-weight: 228 !important;
+}
+
+.fw-229 {
+  font-weight: 229 !important;
+}
+
+.fw-230 {
+  font-weight: 230 !important;
+}
+
+.fw-231 {
+  font-weight: 231 !important;
+}
+
+.fw-232 {
+  font-weight: 232 !important;
+}
+
+.fw-233 {
+  font-weight: 233 !important;
+}
+
+.fw-234 {
+  font-weight: 234 !important;
+}
+
+.fw-235 {
+  font-weight: 235 !important;
+}
+
+.fw-236 {
+  font-weight: 236 !important;
+}
+
+.fw-237 {
+  font-weight: 237 !important;
+}
+
+.fw-238 {
+  font-weight: 238 !important;
+}
+
+.fw-239 {
+  font-weight: 239 !important;
+}
+
+.fw-240 {
+  font-weight: 240 !important;
+}
+
+.fw-241 {
+  font-weight: 241 !important;
+}
+
+.fw-242 {
+  font-weight: 242 !important;
+}
+
+.fw-243 {
+  font-weight: 243 !important;
+}
+
+.fw-244 {
+  font-weight: 244 !important;
+}
+
+.fw-245 {
+  font-weight: 245 !important;
+}
+
+.fw-246 {
+  font-weight: 246 !important;
+}
+
+.fw-247 {
+  font-weight: 247 !important;
+}
+
+.fw-248 {
+  font-weight: 248 !important;
+}
+
+.fw-249 {
+  font-weight: 249 !important;
+}
+
+.fw-250 {
+  font-weight: 250 !important;
+}
+
+.fw-251 {
+  font-weight: 251 !important;
+}
+
+.fw-252 {
+  font-weight: 252 !important;
+}
+
+.fw-253 {
+  font-weight: 253 !important;
+}
+
+.fw-254 {
+  font-weight: 254 !important;
+}
+
+.fw-255 {
+  font-weight: 255 !important;
+}
+
+.fw-256 {
+  font-weight: 256 !important;
+}
+
+.fw-257 {
+  font-weight: 257 !important;
+}
+
+.fw-258 {
+  font-weight: 258 !important;
+}
+
+.fw-259 {
+  font-weight: 259 !important;
+}
+
+.fw-260 {
+  font-weight: 260 !important;
+}
+
+.fw-261 {
+  font-weight: 261 !important;
+}
+
+.fw-262 {
+  font-weight: 262 !important;
+}
+
+.fw-263 {
+  font-weight: 263 !important;
+}
+
+.fw-264 {
+  font-weight: 264 !important;
+}
+
+.fw-265 {
+  font-weight: 265 !important;
+}
+
+.fw-266 {
+  font-weight: 266 !important;
+}
+
+.fw-267 {
+  font-weight: 267 !important;
+}
+
+.fw-268 {
+  font-weight: 268 !important;
+}
+
+.fw-269 {
+  font-weight: 269 !important;
+}
+
+.fw-270 {
+  font-weight: 270 !important;
+}
+
+.fw-271 {
+  font-weight: 271 !important;
+}
+
+.fw-272 {
+  font-weight: 272 !important;
+}
+
+.fw-273 {
+  font-weight: 273 !important;
+}
+
+.fw-274 {
+  font-weight: 274 !important;
+}
+
+.fw-275 {
+  font-weight: 275 !important;
+}
+
+.fw-276 {
+  font-weight: 276 !important;
+}
+
+.fw-277 {
+  font-weight: 277 !important;
+}
+
+.fw-278 {
+  font-weight: 278 !important;
+}
+
+.fw-279 {
+  font-weight: 279 !important;
+}
+
+.fw-280 {
+  font-weight: 280 !important;
+}
+
+.fw-281 {
+  font-weight: 281 !important;
+}
+
+.fw-282 {
+  font-weight: 282 !important;
+}
+
+.fw-283 {
+  font-weight: 283 !important;
+}
+
+.fw-284 {
+  font-weight: 284 !important;
+}
+
+.fw-285 {
+  font-weight: 285 !important;
+}
+
+.fw-286 {
+  font-weight: 286 !important;
+}
+
+.fw-287 {
+  font-weight: 287 !important;
+}
+
+.fw-288 {
+  font-weight: 288 !important;
+}
+
+.fw-289 {
+  font-weight: 289 !important;
+}
+
+.fw-290 {
+  font-weight: 290 !important;
+}
+
+.fw-291 {
+  font-weight: 291 !important;
+}
+
+.fw-292 {
+  font-weight: 292 !important;
+}
+
+.fw-293 {
+  font-weight: 293 !important;
+}
+
+.fw-294 {
+  font-weight: 294 !important;
+}
+
+.fw-295 {
+  font-weight: 295 !important;
+}
+
+.fw-296 {
+  font-weight: 296 !important;
+}
+
+.fw-297 {
+  font-weight: 297 !important;
+}
+
+.fw-298 {
+  font-weight: 298 !important;
+}
+
+.fw-299 {
+  font-weight: 299 !important;
+}
+
+.fw-300 {
+  font-weight: 300 !important;
+}
+
+.fw-301 {
+  font-weight: 301 !important;
+}
+
+.fw-302 {
+  font-weight: 302 !important;
+}
+
+.fw-303 {
+  font-weight: 303 !important;
+}
+
+.fw-304 {
+  font-weight: 304 !important;
+}
+
+.fw-305 {
+  font-weight: 305 !important;
+}
+
+.fw-306 {
+  font-weight: 306 !important;
+}
+
+.fw-307 {
+  font-weight: 307 !important;
+}
+
+.fw-308 {
+  font-weight: 308 !important;
+}
+
+.fw-309 {
+  font-weight: 309 !important;
+}
+
+.fw-310 {
+  font-weight: 310 !important;
+}
+
+.fw-311 {
+  font-weight: 311 !important;
+}
+
+.fw-312 {
+  font-weight: 312 !important;
+}
+
+.fw-313 {
+  font-weight: 313 !important;
+}
+
+.fw-314 {
+  font-weight: 314 !important;
+}
+
+.fw-315 {
+  font-weight: 315 !important;
+}
+
+.fw-316 {
+  font-weight: 316 !important;
+}
+
+.fw-317 {
+  font-weight: 317 !important;
+}
+
+.fw-318 {
+  font-weight: 318 !important;
+}
+
+.fw-319 {
+  font-weight: 319 !important;
+}
+
+.fw-320 {
+  font-weight: 320 !important;
+}
+
+.fw-321 {
+  font-weight: 321 !important;
+}
+
+.fw-322 {
+  font-weight: 322 !important;
+}
+
+.fw-323 {
+  font-weight: 323 !important;
+}
+
+.fw-324 {
+  font-weight: 324 !important;
+}
+
+.fw-325 {
+  font-weight: 325 !important;
+}
+
+.fw-326 {
+  font-weight: 326 !important;
+}
+
+.fw-327 {
+  font-weight: 327 !important;
+}
+
+.fw-328 {
+  font-weight: 328 !important;
+}
+
+.fw-329 {
+  font-weight: 329 !important;
+}
+
+.fw-330 {
+  font-weight: 330 !important;
+}
+
+.fw-331 {
+  font-weight: 331 !important;
+}
+
+.fw-332 {
+  font-weight: 332 !important;
+}
+
+.fw-333 {
+  font-weight: 333 !important;
+}
+
+.fw-334 {
+  font-weight: 334 !important;
+}
+
+.fw-335 {
+  font-weight: 335 !important;
+}
+
+.fw-336 {
+  font-weight: 336 !important;
+}
+
+.fw-337 {
+  font-weight: 337 !important;
+}
+
+.fw-338 {
+  font-weight: 338 !important;
+}
+
+.fw-339 {
+  font-weight: 339 !important;
+}
+
+.fw-340 {
+  font-weight: 340 !important;
+}
+
+.fw-341 {
+  font-weight: 341 !important;
+}
+
+.fw-342 {
+  font-weight: 342 !important;
+}
+
+.fw-343 {
+  font-weight: 343 !important;
+}
+
+.fw-344 {
+  font-weight: 344 !important;
+}
+
+.fw-345 {
+  font-weight: 345 !important;
+}
+
+.fw-346 {
+  font-weight: 346 !important;
+}
+
+.fw-347 {
+  font-weight: 347 !important;
+}
+
+.fw-348 {
+  font-weight: 348 !important;
+}
+
+.fw-349 {
+  font-weight: 349 !important;
+}
+
+.fw-350 {
+  font-weight: 350 !important;
+}
+
+.fw-351 {
+  font-weight: 351 !important;
+}
+
+.fw-352 {
+  font-weight: 352 !important;
+}
+
+.fw-353 {
+  font-weight: 353 !important;
+}
+
+.fw-354 {
+  font-weight: 354 !important;
+}
+
+.fw-355 {
+  font-weight: 355 !important;
+}
+
+.fw-356 {
+  font-weight: 356 !important;
+}
+
+.fw-357 {
+  font-weight: 357 !important;
+}
+
+.fw-358 {
+  font-weight: 358 !important;
+}
+
+.fw-359 {
+  font-weight: 359 !important;
+}
+
+.fw-360 {
+  font-weight: 360 !important;
+}
+
+.fw-361 {
+  font-weight: 361 !important;
+}
+
+.fw-362 {
+  font-weight: 362 !important;
+}
+
+.fw-363 {
+  font-weight: 363 !important;
+}
+
+.fw-364 {
+  font-weight: 364 !important;
+}
+
+.fw-365 {
+  font-weight: 365 !important;
+}
+
+.fw-366 {
+  font-weight: 366 !important;
+}
+
+.fw-367 {
+  font-weight: 367 !important;
+}
+
+.fw-368 {
+  font-weight: 368 !important;
+}
+
+.fw-369 {
+  font-weight: 369 !important;
+}
+
+.fw-370 {
+  font-weight: 370 !important;
+}
+
+.fw-371 {
+  font-weight: 371 !important;
+}
+
+.fw-372 {
+  font-weight: 372 !important;
+}
+
+.fw-373 {
+  font-weight: 373 !important;
+}
+
+.fw-374 {
+  font-weight: 374 !important;
+}
+
+.fw-375 {
+  font-weight: 375 !important;
+}
+
+.fw-376 {
+  font-weight: 376 !important;
+}
+
+.fw-377 {
+  font-weight: 377 !important;
+}
+
+.fw-378 {
+  font-weight: 378 !important;
+}
+
+.fw-379 {
+  font-weight: 379 !important;
+}
+
+.fw-380 {
+  font-weight: 380 !important;
+}
+
+.fw-381 {
+  font-weight: 381 !important;
+}
+
+.fw-382 {
+  font-weight: 382 !important;
+}
+
+.fw-383 {
+  font-weight: 383 !important;
+}
+
+.fw-384 {
+  font-weight: 384 !important;
+}
+
+.fw-385 {
+  font-weight: 385 !important;
+}
+
+.fw-386 {
+  font-weight: 386 !important;
+}
+
+.fw-387 {
+  font-weight: 387 !important;
+}
+
+.fw-388 {
+  font-weight: 388 !important;
+}
+
+.fw-389 {
+  font-weight: 389 !important;
+}
+
+.fw-390 {
+  font-weight: 390 !important;
+}
+
+.fw-391 {
+  font-weight: 391 !important;
+}
+
+.fw-392 {
+  font-weight: 392 !important;
+}
+
+.fw-393 {
+  font-weight: 393 !important;
+}
+
+.fw-394 {
+  font-weight: 394 !important;
+}
+
+.fw-395 {
+  font-weight: 395 !important;
+}
+
+.fw-396 {
+  font-weight: 396 !important;
+}
+
+.fw-397 {
+  font-weight: 397 !important;
+}
+
+.fw-398 {
+  font-weight: 398 !important;
+}
+
+.fw-399 {
+  font-weight: 399 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-401 {
+  font-weight: 401 !important;
+}
+
+.fw-402 {
+  font-weight: 402 !important;
+}
+
+.fw-403 {
+  font-weight: 403 !important;
+}
+
+.fw-404 {
+  font-weight: 404 !important;
+}
+
+.fw-405 {
+  font-weight: 405 !important;
+}
+
+.fw-406 {
+  font-weight: 406 !important;
+}
+
+.fw-407 {
+  font-weight: 407 !important;
+}
+
+.fw-408 {
+  font-weight: 408 !important;
+}
+
+.fw-409 {
+  font-weight: 409 !important;
+}
+
+.fw-410 {
+  font-weight: 410 !important;
+}
+
+.fw-411 {
+  font-weight: 411 !important;
+}
+
+.fw-412 {
+  font-weight: 412 !important;
+}
+
+.fw-413 {
+  font-weight: 413 !important;
+}
+
+.fw-414 {
+  font-weight: 414 !important;
+}
+
+.fw-415 {
+  font-weight: 415 !important;
+}
+
+.fw-416 {
+  font-weight: 416 !important;
+}
+
+.fw-417 {
+  font-weight: 417 !important;
+}
+
+.fw-418 {
+  font-weight: 418 !important;
+}
+
+.fw-419 {
+  font-weight: 419 !important;
+}
+
+.fw-420 {
+  font-weight: 420 !important;
+}
+
+.fw-421 {
+  font-weight: 421 !important;
+}
+
+.fw-422 {
+  font-weight: 422 !important;
+}
+
+.fw-423 {
+  font-weight: 423 !important;
+}
+
+.fw-424 {
+  font-weight: 424 !important;
+}
+
+.fw-425 {
+  font-weight: 425 !important;
+}
+
+.fw-426 {
+  font-weight: 426 !important;
+}
+
+.fw-427 {
+  font-weight: 427 !important;
+}
+
+.fw-428 {
+  font-weight: 428 !important;
+}
+
+.fw-429 {
+  font-weight: 429 !important;
+}
+
+.fw-430 {
+  font-weight: 430 !important;
+}
+
+.fw-431 {
+  font-weight: 431 !important;
+}
+
+.fw-432 {
+  font-weight: 432 !important;
+}
+
+.fw-433 {
+  font-weight: 433 !important;
+}
+
+.fw-434 {
+  font-weight: 434 !important;
+}
+
+.fw-435 {
+  font-weight: 435 !important;
+}
+
+.fw-436 {
+  font-weight: 436 !important;
+}
+
+.fw-437 {
+  font-weight: 437 !important;
+}
+
+.fw-438 {
+  font-weight: 438 !important;
+}
+
+.fw-439 {
+  font-weight: 439 !important;
+}
+
+.fw-440 {
+  font-weight: 440 !important;
+}
+
+.fw-441 {
+  font-weight: 441 !important;
+}
+
+.fw-442 {
+  font-weight: 442 !important;
+}
+
+.fw-443 {
+  font-weight: 443 !important;
+}
+
+.fw-444 {
+  font-weight: 444 !important;
+}
+
+.fw-445 {
+  font-weight: 445 !important;
+}
+
+.fw-446 {
+  font-weight: 446 !important;
+}
+
+.fw-447 {
+  font-weight: 447 !important;
+}
+
+.fw-448 {
+  font-weight: 448 !important;
+}
+
+.fw-449 {
+  font-weight: 449 !important;
+}
+
+.fw-450 {
+  font-weight: 450 !important;
+}
+
+.fw-451 {
+  font-weight: 451 !important;
+}
+
+.fw-452 {
+  font-weight: 452 !important;
+}
+
+.fw-453 {
+  font-weight: 453 !important;
+}
+
+.fw-454 {
+  font-weight: 454 !important;
+}
+
+.fw-455 {
+  font-weight: 455 !important;
+}
+
+.fw-456 {
+  font-weight: 456 !important;
+}
+
+.fw-457 {
+  font-weight: 457 !important;
+}
+
+.fw-458 {
+  font-weight: 458 !important;
+}
+
+.fw-459 {
+  font-weight: 459 !important;
+}
+
+.fw-460 {
+  font-weight: 460 !important;
+}
+
+.fw-461 {
+  font-weight: 461 !important;
+}
+
+.fw-462 {
+  font-weight: 462 !important;
+}
+
+.fw-463 {
+  font-weight: 463 !important;
+}
+
+.fw-464 {
+  font-weight: 464 !important;
+}
+
+.fw-465 {
+  font-weight: 465 !important;
+}
+
+.fw-466 {
+  font-weight: 466 !important;
+}
+
+.fw-467 {
+  font-weight: 467 !important;
+}
+
+.fw-468 {
+  font-weight: 468 !important;
+}
+
+.fw-469 {
+  font-weight: 469 !important;
+}
+
+.fw-470 {
+  font-weight: 470 !important;
+}
+
+.fw-471 {
+  font-weight: 471 !important;
+}
+
+.fw-472 {
+  font-weight: 472 !important;
+}
+
+.fw-473 {
+  font-weight: 473 !important;
+}
+
+.fw-474 {
+  font-weight: 474 !important;
+}
+
+.fw-475 {
+  font-weight: 475 !important;
+}
+
+.fw-476 {
+  font-weight: 476 !important;
+}
+
+.fw-477 {
+  font-weight: 477 !important;
+}
+
+.fw-478 {
+  font-weight: 478 !important;
+}
+
+.fw-479 {
+  font-weight: 479 !important;
+}
+
+.fw-480 {
+  font-weight: 480 !important;
+}
+
+.fw-481 {
+  font-weight: 481 !important;
+}
+
+.fw-482 {
+  font-weight: 482 !important;
+}
+
+.fw-483 {
+  font-weight: 483 !important;
+}
+
+.fw-484 {
+  font-weight: 484 !important;
+}
+
+.fw-485 {
+  font-weight: 485 !important;
+}
+
+.fw-486 {
+  font-weight: 486 !important;
+}
+
+.fw-487 {
+  font-weight: 487 !important;
+}
+
+.fw-488 {
+  font-weight: 488 !important;
+}
+
+.fw-489 {
+  font-weight: 489 !important;
+}
+
+.fw-490 {
+  font-weight: 490 !important;
+}
+
+.fw-491 {
+  font-weight: 491 !important;
+}
+
+.fw-492 {
+  font-weight: 492 !important;
+}
+
+.fw-493 {
+  font-weight: 493 !important;
+}
+
+.fw-494 {
+  font-weight: 494 !important;
+}
+
+.fw-495 {
+  font-weight: 495 !important;
+}
+
+.fw-496 {
+  font-weight: 496 !important;
+}
+
+.fw-497 {
+  font-weight: 497 !important;
+}
+
+.fw-498 {
+  font-weight: 498 !important;
+}
+
+.fw-499 {
+  font-weight: 499 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-501 {
+  font-weight: 501 !important;
+}
+
+.fw-502 {
+  font-weight: 502 !important;
+}
+
+.fw-503 {
+  font-weight: 503 !important;
+}
+
+.fw-504 {
+  font-weight: 504 !important;
+}
+
+.fw-505 {
+  font-weight: 505 !important;
+}
+
+.fw-506 {
+  font-weight: 506 !important;
+}
+
+.fw-507 {
+  font-weight: 507 !important;
+}
+
+.fw-508 {
+  font-weight: 508 !important;
+}
+
+.fw-509 {
+  font-weight: 509 !important;
+}
+
+.fw-510 {
+  font-weight: 510 !important;
+}
+
+.fw-511 {
+  font-weight: 511 !important;
+}
+
+.fw-512 {
+  font-weight: 512 !important;
+}
+
+.fw-513 {
+  font-weight: 513 !important;
+}
+
+.fw-514 {
+  font-weight: 514 !important;
+}
+
+.fw-515 {
+  font-weight: 515 !important;
+}
+
+.fw-516 {
+  font-weight: 516 !important;
+}
+
+.fw-517 {
+  font-weight: 517 !important;
+}
+
+.fw-518 {
+  font-weight: 518 !important;
+}
+
+.fw-519 {
+  font-weight: 519 !important;
+}
+
+.fw-520 {
+  font-weight: 520 !important;
+}
+
+.fw-521 {
+  font-weight: 521 !important;
+}
+
+.fw-522 {
+  font-weight: 522 !important;
+}
+
+.fw-523 {
+  font-weight: 523 !important;
+}
+
+.fw-524 {
+  font-weight: 524 !important;
+}
+
+.fw-525 {
+  font-weight: 525 !important;
+}
+
+.fw-526 {
+  font-weight: 526 !important;
+}
+
+.fw-527 {
+  font-weight: 527 !important;
+}
+
+.fw-528 {
+  font-weight: 528 !important;
+}
+
+.fw-529 {
+  font-weight: 529 !important;
+}
+
+.fw-530 {
+  font-weight: 530 !important;
+}
+
+.fw-531 {
+  font-weight: 531 !important;
+}
+
+.fw-532 {
+  font-weight: 532 !important;
+}
+
+.fw-533 {
+  font-weight: 533 !important;
+}
+
+.fw-534 {
+  font-weight: 534 !important;
+}
+
+.fw-535 {
+  font-weight: 535 !important;
+}
+
+.fw-536 {
+  font-weight: 536 !important;
+}
+
+.fw-537 {
+  font-weight: 537 !important;
+}
+
+.fw-538 {
+  font-weight: 538 !important;
+}
+
+.fw-539 {
+  font-weight: 539 !important;
+}
+
+.fw-540 {
+  font-weight: 540 !important;
+}
+
+.fw-541 {
+  font-weight: 541 !important;
+}
+
+.fw-542 {
+  font-weight: 542 !important;
+}
+
+.fw-543 {
+  font-weight: 543 !important;
+}
+
+.fw-544 {
+  font-weight: 544 !important;
+}
+
+.fw-545 {
+  font-weight: 545 !important;
+}
+
+.fw-546 {
+  font-weight: 546 !important;
+}
+
+.fw-547 {
+  font-weight: 547 !important;
+}
+
+.fw-548 {
+  font-weight: 548 !important;
+}
+
+.fw-549 {
+  font-weight: 549 !important;
+}
+
+.fw-550 {
+  font-weight: 550 !important;
+}
+
+.fw-551 {
+  font-weight: 551 !important;
+}
+
+.fw-552 {
+  font-weight: 552 !important;
+}
+
+.fw-553 {
+  font-weight: 553 !important;
+}
+
+.fw-554 {
+  font-weight: 554 !important;
+}
+
+.fw-555 {
+  font-weight: 555 !important;
+}
+
+.fw-556 {
+  font-weight: 556 !important;
+}
+
+.fw-557 {
+  font-weight: 557 !important;
+}
+
+.fw-558 {
+  font-weight: 558 !important;
+}
+
+.fw-559 {
+  font-weight: 559 !important;
+}
+
+.fw-560 {
+  font-weight: 560 !important;
+}
+
+.fw-561 {
+  font-weight: 561 !important;
+}
+
+.fw-562 {
+  font-weight: 562 !important;
+}
+
+.fw-563 {
+  font-weight: 563 !important;
+}
+
+.fw-564 {
+  font-weight: 564 !important;
+}
+
+.fw-565 {
+  font-weight: 565 !important;
+}
+
+.fw-566 {
+  font-weight: 566 !important;
+}
+
+.fw-567 {
+  font-weight: 567 !important;
+}
+
+.fw-568 {
+  font-weight: 568 !important;
+}
+
+.fw-569 {
+  font-weight: 569 !important;
+}
+
+.fw-570 {
+  font-weight: 570 !important;
+}
+
+.fw-571 {
+  font-weight: 571 !important;
+}
+
+.fw-572 {
+  font-weight: 572 !important;
+}
+
+.fw-573 {
+  font-weight: 573 !important;
+}
+
+.fw-574 {
+  font-weight: 574 !important;
+}
+
+.fw-575 {
+  font-weight: 575 !important;
+}
+
+.fw-576 {
+  font-weight: 576 !important;
+}
+
+.fw-577 {
+  font-weight: 577 !important;
+}
+
+.fw-578 {
+  font-weight: 578 !important;
+}
+
+.fw-579 {
+  font-weight: 579 !important;
+}
+
+.fw-580 {
+  font-weight: 580 !important;
+}
+
+.fw-581 {
+  font-weight: 581 !important;
+}
+
+.fw-582 {
+  font-weight: 582 !important;
+}
+
+.fw-583 {
+  font-weight: 583 !important;
+}
+
+.fw-584 {
+  font-weight: 584 !important;
+}
+
+.fw-585 {
+  font-weight: 585 !important;
+}
+
+.fw-586 {
+  font-weight: 586 !important;
+}
+
+.fw-587 {
+  font-weight: 587 !important;
+}
+
+.fw-588 {
+  font-weight: 588 !important;
+}
+
+.fw-589 {
+  font-weight: 589 !important;
+}
+
+.fw-590 {
+  font-weight: 590 !important;
+}
+
+.fw-591 {
+  font-weight: 591 !important;
+}
+
+.fw-592 {
+  font-weight: 592 !important;
+}
+
+.fw-593 {
+  font-weight: 593 !important;
+}
+
+.fw-594 {
+  font-weight: 594 !important;
+}
+
+.fw-595 {
+  font-weight: 595 !important;
+}
+
+.fw-596 {
+  font-weight: 596 !important;
+}
+
+.fw-597 {
+  font-weight: 597 !important;
+}
+
+.fw-598 {
+  font-weight: 598 !important;
+}
+
+.fw-599 {
+  font-weight: 599 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.fw-601 {
+  font-weight: 601 !important;
+}
+
+.fw-602 {
+  font-weight: 602 !important;
+}
+
+.fw-603 {
+  font-weight: 603 !important;
+}
+
+.fw-604 {
+  font-weight: 604 !important;
+}
+
+.fw-605 {
+  font-weight: 605 !important;
+}
+
+.fw-606 {
+  font-weight: 606 !important;
+}
+
+.fw-607 {
+  font-weight: 607 !important;
+}
+
+.fw-608 {
+  font-weight: 608 !important;
+}
+
+.fw-609 {
+  font-weight: 609 !important;
+}
+
+.fw-610 {
+  font-weight: 610 !important;
+}
+
+.fw-611 {
+  font-weight: 611 !important;
+}
+
+.fw-612 {
+  font-weight: 612 !important;
+}
+
+.fw-613 {
+  font-weight: 613 !important;
+}
+
+.fw-614 {
+  font-weight: 614 !important;
+}
+
+.fw-615 {
+  font-weight: 615 !important;
+}
+
+.fw-616 {
+  font-weight: 616 !important;
+}
+
+.fw-617 {
+  font-weight: 617 !important;
+}
+
+.fw-618 {
+  font-weight: 618 !important;
+}
+
+.fw-619 {
+  font-weight: 619 !important;
+}
+
+.fw-620 {
+  font-weight: 620 !important;
+}
+
+.fw-621 {
+  font-weight: 621 !important;
+}
+
+.fw-622 {
+  font-weight: 622 !important;
+}
+
+.fw-623 {
+  font-weight: 623 !important;
+}
+
+.fw-624 {
+  font-weight: 624 !important;
+}
+
+.fw-625 {
+  font-weight: 625 !important;
+}
+
+.fw-626 {
+  font-weight: 626 !important;
+}
+
+.fw-627 {
+  font-weight: 627 !important;
+}
+
+.fw-628 {
+  font-weight: 628 !important;
+}
+
+.fw-629 {
+  font-weight: 629 !important;
+}
+
+.fw-630 {
+  font-weight: 630 !important;
+}
+
+.fw-631 {
+  font-weight: 631 !important;
+}
+
+.fw-632 {
+  font-weight: 632 !important;
+}
+
+.fw-633 {
+  font-weight: 633 !important;
+}
+
+.fw-634 {
+  font-weight: 634 !important;
+}
+
+.fw-635 {
+  font-weight: 635 !important;
+}
+
+.fw-636 {
+  font-weight: 636 !important;
+}
+
+.fw-637 {
+  font-weight: 637 !important;
+}
+
+.fw-638 {
+  font-weight: 638 !important;
+}
+
+.fw-639 {
+  font-weight: 639 !important;
+}
+
+.fw-640 {
+  font-weight: 640 !important;
+}
+
+.fw-641 {
+  font-weight: 641 !important;
+}
+
+.fw-642 {
+  font-weight: 642 !important;
+}
+
+.fw-643 {
+  font-weight: 643 !important;
+}
+
+.fw-644 {
+  font-weight: 644 !important;
+}
+
+.fw-645 {
+  font-weight: 645 !important;
+}
+
+.fw-646 {
+  font-weight: 646 !important;
+}
+
+.fw-647 {
+  font-weight: 647 !important;
+}
+
+.fw-648 {
+  font-weight: 648 !important;
+}
+
+.fw-649 {
+  font-weight: 649 !important;
+}
+
+.fw-650 {
+  font-weight: 650 !important;
+}
+
+.fw-651 {
+  font-weight: 651 !important;
+}
+
+.fw-652 {
+  font-weight: 652 !important;
+}
+
+.fw-653 {
+  font-weight: 653 !important;
+}
+
+.fw-654 {
+  font-weight: 654 !important;
+}
+
+.fw-655 {
+  font-weight: 655 !important;
+}
+
+.fw-656 {
+  font-weight: 656 !important;
+}
+
+.fw-657 {
+  font-weight: 657 !important;
+}
+
+.fw-658 {
+  font-weight: 658 !important;
+}
+
+.fw-659 {
+  font-weight: 659 !important;
+}
+
+.fw-660 {
+  font-weight: 660 !important;
+}
+
+.fw-661 {
+  font-weight: 661 !important;
+}
+
+.fw-662 {
+  font-weight: 662 !important;
+}
+
+.fw-663 {
+  font-weight: 663 !important;
+}
+
+.fw-664 {
+  font-weight: 664 !important;
+}
+
+.fw-665 {
+  font-weight: 665 !important;
+}
+
+.fw-666 {
+  font-weight: 666 !important;
+}
+
+.fw-667 {
+  font-weight: 667 !important;
+}
+
+.fw-668 {
+  font-weight: 668 !important;
+}
+
+.fw-669 {
+  font-weight: 669 !important;
+}
+
+.fw-670 {
+  font-weight: 670 !important;
+}
+
+.fw-671 {
+  font-weight: 671 !important;
+}
+
+.fw-672 {
+  font-weight: 672 !important;
+}
+
+.fw-673 {
+  font-weight: 673 !important;
+}
+
+.fw-674 {
+  font-weight: 674 !important;
+}
+
+.fw-675 {
+  font-weight: 675 !important;
+}
+
+.fw-676 {
+  font-weight: 676 !important;
+}
+
+.fw-677 {
+  font-weight: 677 !important;
+}
+
+.fw-678 {
+  font-weight: 678 !important;
+}
+
+.fw-679 {
+  font-weight: 679 !important;
+}
+
+.fw-680 {
+  font-weight: 680 !important;
+}
+
+.fw-681 {
+  font-weight: 681 !important;
+}
+
+.fw-682 {
+  font-weight: 682 !important;
+}
+
+.fw-683 {
+  font-weight: 683 !important;
+}
+
+.fw-684 {
+  font-weight: 684 !important;
+}
+
+.fw-685 {
+  font-weight: 685 !important;
+}
+
+.fw-686 {
+  font-weight: 686 !important;
+}
+
+.fw-687 {
+  font-weight: 687 !important;
+}
+
+.fw-688 {
+  font-weight: 688 !important;
+}
+
+.fw-689 {
+  font-weight: 689 !important;
+}
+
+.fw-690 {
+  font-weight: 690 !important;
+}
+
+.fw-691 {
+  font-weight: 691 !important;
+}
+
+.fw-692 {
+  font-weight: 692 !important;
+}
+
+.fw-693 {
+  font-weight: 693 !important;
+}
+
+.fw-694 {
+  font-weight: 694 !important;
+}
+
+.fw-695 {
+  font-weight: 695 !important;
+}
+
+.fw-696 {
+  font-weight: 696 !important;
+}
+
+.fw-697 {
+  font-weight: 697 !important;
+}
+
+.fw-698 {
+  font-weight: 698 !important;
+}
+
+.fw-699 {
+  font-weight: 699 !important;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+.fw-701 {
+  font-weight: 701 !important;
+}
+
+.fw-702 {
+  font-weight: 702 !important;
+}
+
+.fw-703 {
+  font-weight: 703 !important;
+}
+
+.fw-704 {
+  font-weight: 704 !important;
+}
+
+.fw-705 {
+  font-weight: 705 !important;
+}
+
+.fw-706 {
+  font-weight: 706 !important;
+}
+
+.fw-707 {
+  font-weight: 707 !important;
+}
+
+.fw-708 {
+  font-weight: 708 !important;
+}
+
+.fw-709 {
+  font-weight: 709 !important;
+}
+
+.fw-710 {
+  font-weight: 710 !important;
+}
+
+.fw-711 {
+  font-weight: 711 !important;
+}
+
+.fw-712 {
+  font-weight: 712 !important;
+}
+
+.fw-713 {
+  font-weight: 713 !important;
+}
+
+.fw-714 {
+  font-weight: 714 !important;
+}
+
+.fw-715 {
+  font-weight: 715 !important;
+}
+
+.fw-716 {
+  font-weight: 716 !important;
+}
+
+.fw-717 {
+  font-weight: 717 !important;
+}
+
+.fw-718 {
+  font-weight: 718 !important;
+}
+
+.fw-719 {
+  font-weight: 719 !important;
+}
+
+.fw-720 {
+  font-weight: 720 !important;
+}
+
+.fw-721 {
+  font-weight: 721 !important;
+}
+
+.fw-722 {
+  font-weight: 722 !important;
+}
+
+.fw-723 {
+  font-weight: 723 !important;
+}
+
+.fw-724 {
+  font-weight: 724 !important;
+}
+
+.fw-725 {
+  font-weight: 725 !important;
+}
+
+.fw-726 {
+  font-weight: 726 !important;
+}
+
+.fw-727 {
+  font-weight: 727 !important;
+}
+
+.fw-728 {
+  font-weight: 728 !important;
+}
+
+.fw-729 {
+  font-weight: 729 !important;
+}
+
+.fw-730 {
+  font-weight: 730 !important;
+}
+
+.fw-731 {
+  font-weight: 731 !important;
+}
+
+.fw-732 {
+  font-weight: 732 !important;
+}
+
+.fw-733 {
+  font-weight: 733 !important;
+}
+
+.fw-734 {
+  font-weight: 734 !important;
+}
+
+.fw-735 {
+  font-weight: 735 !important;
+}
+
+.fw-736 {
+  font-weight: 736 !important;
+}
+
+.fw-737 {
+  font-weight: 737 !important;
+}
+
+.fw-738 {
+  font-weight: 738 !important;
+}
+
+.fw-739 {
+  font-weight: 739 !important;
+}
+
+.fw-740 {
+  font-weight: 740 !important;
+}
+
+.fw-741 {
+  font-weight: 741 !important;
+}
+
+.fw-742 {
+  font-weight: 742 !important;
+}
+
+.fw-743 {
+  font-weight: 743 !important;
+}
+
+.fw-744 {
+  font-weight: 744 !important;
+}
+
+.fw-745 {
+  font-weight: 745 !important;
+}
+
+.fw-746 {
+  font-weight: 746 !important;
+}
+
+.fw-747 {
+  font-weight: 747 !important;
+}
+
+.fw-748 {
+  font-weight: 748 !important;
+}
+
+.fw-749 {
+  font-weight: 749 !important;
+}
+
+.fw-750 {
+  font-weight: 750 !important;
+}
+
+.fw-751 {
+  font-weight: 751 !important;
+}
+
+.fw-752 {
+  font-weight: 752 !important;
+}
+
+.fw-753 {
+  font-weight: 753 !important;
+}
+
+.fw-754 {
+  font-weight: 754 !important;
+}
+
+.fw-755 {
+  font-weight: 755 !important;
+}
+
+.fw-756 {
+  font-weight: 756 !important;
+}
+
+.fw-757 {
+  font-weight: 757 !important;
+}
+
+.fw-758 {
+  font-weight: 758 !important;
+}
+
+.fw-759 {
+  font-weight: 759 !important;
+}
+
+.fw-760 {
+  font-weight: 760 !important;
+}
+
+.fw-761 {
+  font-weight: 761 !important;
+}
+
+.fw-762 {
+  font-weight: 762 !important;
+}
+
+.fw-763 {
+  font-weight: 763 !important;
+}
+
+.fw-764 {
+  font-weight: 764 !important;
+}
+
+.fw-765 {
+  font-weight: 765 !important;
+}
+
+.fw-766 {
+  font-weight: 766 !important;
+}
+
+.fw-767 {
+  font-weight: 767 !important;
+}
+
+.fw-768 {
+  font-weight: 768 !important;
+}
+
+.fw-769 {
+  font-weight: 769 !important;
+}
+
+.fw-770 {
+  font-weight: 770 !important;
+}
+
+.fw-771 {
+  font-weight: 771 !important;
+}
+
+.fw-772 {
+  font-weight: 772 !important;
+}
+
+.fw-773 {
+  font-weight: 773 !important;
+}
+
+.fw-774 {
+  font-weight: 774 !important;
+}
+
+.fw-775 {
+  font-weight: 775 !important;
+}
+
+.fw-776 {
+  font-weight: 776 !important;
+}
+
+.fw-777 {
+  font-weight: 777 !important;
+}
+
+.fw-778 {
+  font-weight: 778 !important;
+}
+
+.fw-779 {
+  font-weight: 779 !important;
+}
+
+.fw-780 {
+  font-weight: 780 !important;
+}
+
+.fw-781 {
+  font-weight: 781 !important;
+}
+
+.fw-782 {
+  font-weight: 782 !important;
+}
+
+.fw-783 {
+  font-weight: 783 !important;
+}
+
+.fw-784 {
+  font-weight: 784 !important;
+}
+
+.fw-785 {
+  font-weight: 785 !important;
+}
+
+.fw-786 {
+  font-weight: 786 !important;
+}
+
+.fw-787 {
+  font-weight: 787 !important;
+}
+
+.fw-788 {
+  font-weight: 788 !important;
+}
+
+.fw-789 {
+  font-weight: 789 !important;
+}
+
+.fw-790 {
+  font-weight: 790 !important;
+}
+
+.fw-791 {
+  font-weight: 791 !important;
+}
+
+.fw-792 {
+  font-weight: 792 !important;
+}
+
+.fw-793 {
+  font-weight: 793 !important;
+}
+
+.fw-794 {
+  font-weight: 794 !important;
+}
+
+.fw-795 {
+  font-weight: 795 !important;
+}
+
+.fw-796 {
+  font-weight: 796 !important;
+}
+
+.fw-797 {
+  font-weight: 797 !important;
+}
+
+.fw-798 {
+  font-weight: 798 !important;
+}
+
+.fw-799 {
+  font-weight: 799 !important;
+}
+
+.fw-800 {
+  font-weight: 800 !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.bg-white {
+  background-color: var(--color-white) !important;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.visibility {
+  visibility: visible;
+}
+.visibility-hidden {
+  visibility: hidden;
+}
+
+.shadow-none {
+  box-shadow: none !important;
+}
+
+body {
+  font-family: var(--font-primary);
+}
