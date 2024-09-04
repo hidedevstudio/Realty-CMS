@@ -113,7 +113,7 @@
      font-family: var(--font-button);
 }
 // Button color
-@mixin button-color($btn-color, $btn-background, $btn-shadow, $btn-border-color) {
+@mixin button-color($btn-color, $btn-background, $btn-border-color, $btn-shadow) {
      color: $btn-color;
      background: $btn-background;
      box-shadow: $btn-shadow;

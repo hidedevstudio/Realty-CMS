@@ -1,1 +1,1 @@
-<h1>Шапка сайта</h1>
+<h1>< Realty CMS / <span class="dot">_</span></h1>

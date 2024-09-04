@@ -37,8 +37,8 @@
           <link rel="stylesheet" href="{assets}/css/custom.css" />
      </head>
      <body>
-          {include="components/header"}
-          <h1>{lang=welcome}</h1>
-          {include="components/footer"} {include="scripts"}
+          <main>{include="components/header"} {include="pages/landing"} {include="components/footer"}</main>
+
+          {include="scripts"}
      </body>
 </html>

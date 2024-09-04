@@ -1,0 +1,43 @@
+body {
+     font-family: var(--font-primary);
+     background-color: var(--color-body);
+     color: var(--color-text);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     font-family: var(--font-secondary);
+     font-weight: 300;
+     @include fluid-text(70, 25);
+     color: var(--color-title);
+}
+// Demo styles
+main {
+     @include flex-center;
+     @include flex-column(30px);
+     min-height: 100vh;
+     padding: 20px;
+     position: relative;
+}
+.landing {
+     @include flex-column(30px);
+     &__text {
+          text-align: center;
+          max-width: 600px;
+          margin-inline: auto;
+     }
+     &__links {
+          @include flex(center, center, 10px);
+          flex-wrap: wrap;
+     }
+}
+footer {
+     position: absolute;
+     bottom: 20px;
+     left: 50%;
+     transform: translateX(-50%);
+     font-size: 13px;
+}

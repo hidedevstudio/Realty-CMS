@@ -1,1 +1,1 @@
-<h2>footer © {year}</h2>
+<footer>Copyright © {year} | MIT License</footer>

@@ -1,1 +1,18 @@
-// Ui
+// UI Components
+
+// Button
+.btn {
+     @include button;
+}
+.btn-primary {
+     @include button-color(var(--color-white), var(--btn-bg-primary), var(--btn-bg-primary), none);
+     &:hover {
+          @include button-color(var(--color-white), var(--btn-bg-hover-primary), var(--btn-bg-hover-primary), none);
+     }
+}
+.btn-secondary {
+     @include button-color(var(--color-white), var(--btn-bg-secondary), var(--btn-bg-secondary), none);
+     &:hover {
+          @include button-color(var(--color-white), var(--btn-bg-hover-secondary), var(--btn-bg-hover-secondary), none);
+     }
+}
