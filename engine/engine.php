@@ -65,7 +65,7 @@ class TemplateEngine {
             }
         }, $content);
 
-        // Обработка {lang=mykey}
+        // Обработка {lang=key}
         $content = preg_replace_callback('/\{lang=([^}]+)\}/', function ($matches) {
             $key = $matches[1];
             return isset($this->translations[$key]) ? $this->translations[$key] : $key;
