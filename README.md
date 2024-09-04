@@ -6,7 +6,7 @@
 
 **{assets}** - creates a path to the /template folder to use the absolute path of files and images
 **{url}** - current page url
-**{include="filename"}** - import any template from the root directory and folders in the tpl file. The path is specified without an extension.
+**{include="filename"}** - import any template from the root directory and folders in the tpl file. The path is specified without an extension
 **{year}** - displays the current year as a number
 
 ## Translate
@@ -18,3 +18,7 @@ The transfer is organized in .lng files and is carried out at the expense of the
 ## Config
 
 The configuration file has 2 configurable parameters - the main file and the main language.
+
+## CSS and SCSS
+
+The CMS provides a system of simple logical files for more convenient operation. All files are compiled in main.css, for custom styles there is a custom.css file for regular styles
