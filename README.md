@@ -4,10 +4,10 @@
 
 ## Template engines
 
-**{assets}** - creates a path to the /template folder to use the absolute path of files and images
-**{url}** - current page url
-**{include="filename"}** - import any template from the root directory and folders in the tpl file. The path is specified without an extension
-**{year}** - displays the current year as a number
+-    **{assets}** - creates a path to the /template folder to use the absolute path of files and images
+-    **{url}** - current page url
+-    **{include="filename"}** - import any template from the root directory and folders in the tpl file. The path is specified without an extension
+-    **{year}** - displays the current year as a number
 
 ## Translate
 
