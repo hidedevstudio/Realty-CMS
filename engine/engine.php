@@ -15,7 +15,7 @@ class TemplateEngine {
         $this->assetPath = rtrim($assetPath, '/');
 
         // Установка языка по умолчанию из config.php или из URL
-        $this->language = isset($_GET['lang']) && in_array($_GET['lang'], ['en', 'ru']) 
+        $this->language = isset($_GET['lang']) && in_array($_GET['lang'], ['en', 'ru', 'fr', 'es']) 
             ? $_GET['lang'] 
             : (isset($config['language']) ? $config['language'] : 'en');
 
@@ -69,6 +69,13 @@ class TemplateEngine {
         $content = preg_replace_callback('/\{lang=([^}]+)\}/', function ($matches) {
             $key = $matches[1];
             return isset($this->translations[$key]) ? $this->translations[$key] : $key;
+        }, $content);
+
+        // Обработка [lang=en]...[/lang] для всех языков
+        $content = preg_replace_callback('/\[lang=([a-z]{2})\](.*?)\[\/lang\]/s', function ($matches) {
+            $lang = $matches[1];
+            $text = $matches[2];
+            return $lang === $this->language ? $text : '';
         }, $content);
 
         return $content;

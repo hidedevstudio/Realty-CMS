@@ -14,6 +14,7 @@
 The transfer is organized in .lng files and is carried out at the expense of the transfer keys. Initially, 4 languages were added: English, Russian, French, Spanish. Switching takes place via the link /en /ru /es /fr, so it can be indexed for all languages.
 
 **{lang=key}** - an example of a tag for setting a translation key. The key must always be unique. It works in all of them .TPL templates
+**[lang=es] My text [/lang]** - displays the content if the specified language is set
 
 ## Config
 
